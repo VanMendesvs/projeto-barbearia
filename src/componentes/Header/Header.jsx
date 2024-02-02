@@ -14,6 +14,7 @@ function Header() {
                     <li>Unidades</li>
                     <li>Sobre</li>
                 </ul>
+                <h3>(11) 99999-9999</h3>
             </nav>
         </header>
     )
