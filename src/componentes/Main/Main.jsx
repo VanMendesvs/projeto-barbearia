@@ -6,23 +6,20 @@ import Carrinho from "../../componentes/Main/carrinho.png"
 
 function Main() {
 
-        const [numero, setNumero] = useState (0)
+        const [numero,setNumero] = useState (0)
         //const [o objeto, função para mudar o estado o objeto] =useState(valor incial)
 
-        const Adicionar = () => {
+        const Adicionar =()=> {
+            if (numero < 10)
                    setNumero(numero + 1)
             }
         
-
         return(
             <main>
-               
-            
                 <div className="card1">
                 <img className="cortes" src={Cortes} alt=""/> 
-                <h3>Cortes</h3>
                 <h3>50,00</h3>
-                <button onclick={Adicionar}>AGENDAR<img src={Carrinho}alt=""/></button>
+                <button onClick={Adicionar}>AGENDAR<img src={Carrinho}alt=""/></button>
                 <h3> {numero} </h3>
                 </div>  
 
